@@ -43,7 +43,7 @@
 			<tbody>
 				<?php foreach($consulta as $datos): ?>
 					<tr>
-						<td><?= $datos['tipodoc']; ?></td>
+						<td><?= $datos['documento']; ?></td>
 						<td><?= $datos['numero']; ?></td>
 						<td><?= $datos['nombre']; ?></td>
 						<td><?= $datos['f_nacimiento']; ?></td>
