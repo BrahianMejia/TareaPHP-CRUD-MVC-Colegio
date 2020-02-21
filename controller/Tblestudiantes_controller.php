@@ -14,7 +14,7 @@
 		public function index()
 		{
 
-			$consulta = $this->model_estudiantes->consultar("SELECT * FROM tblestudiante");
+			$consulta = $this->model_estudiantes->consultar("SELECT e.*, t.nombre documento FROM tblestudiante e, tbltipodocumento t WHERE e.tipodoc = t.idtipo");
 			$listarDocumentos = $this->model_estudiantes->listarDocumentos("SELECT * FROM tbltipodocumento");
 			
 			require_once('vista/tblestudiantes.view.php');
